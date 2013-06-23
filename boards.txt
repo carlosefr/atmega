@@ -1,0 +1,59 @@
+atmega168-1.name=ATmega168 (internal 1 MHz clock)
+atmega168-1.bootloader.low_fuses=0x62
+atmega168-1.bootloader.high_fuses=0xdd
+atmega168-1.bootloader.extended_fuses=0x00
+atmega168-1.upload.maximum_size=16384
+atmega168-1.build.mcu=atmega168
+atmega168-1.build.f_cpu=1000000L
+atmega168-1.build.core=arduino:arduino
+atmega168-1.build.variant=arduino:standard
+
+atmega168-8.name=ATmega168 (internal 8 MHz clock)
+atmega168-8.bootloader.low_fuses=0xe2
+atmega168-8.bootloader.high_fuses=0xdd
+atmega168-8.bootloader.extended_fuses=0x00
+atmega168-8.upload.maximum_size=16384
+atmega168-8.build.mcu=atmega168
+atmega168-8.build.f_cpu=8000000L
+atmega168-8.build.core=arduino:arduino
+atmega168-8.build.variant=arduino:standard
+
+atmega168-16.name=ATmega168 (external 16 MHz clock)
+atmega168-16.bootloader.low_fuses=0xff
+atmega168-16.bootloader.high_fuses=0xdd
+atmega168-16.bootloader.extended_fuses=0x00
+atmega168-16.upload.maximum_size=16384
+atmega168-16.build.mcu=atmega168
+atmega168-16.build.f_cpu=16000000L
+atmega168-16.build.core=arduino:arduino
+atmega168-16.build.variant=arduino:standard
+
+atmega328p-1.name=ATmega328p (internal 1 MHz clock)
+atmega328p-1.bootloader.low_fuses=0x62
+atmega328p-1.bootloader.high_fuses=0xda
+atmega328p-1.bootloader.extended_fuses=0x05
+atmega328p-1.upload.maximum_size=32768
+atmega328p-1.build.mcu=atmega328p
+atmega328p-1.build.f_cpu=1000000L
+atmega328p-1.build.core=arduino:arduino
+atmega328p-1.build.variant=arduino:standard
+
+atmega328p-8.name=ATmega328p (internal 8 MHz clock)
+atmega328p-8.bootloader.low_fuses=0xe2
+atmega328p-8.bootloader.high_fuses=0xda
+atmega328p-8.bootloader.extended_fuses=0x05
+atmega328p-8.upload.maximum_size=32768
+atmega328p-8.build.mcu=atmega328p
+atmega328p-8.build.f_cpu=8000000L
+atmega328p-8.build.core=arduino:arduino
+atmega328p-8.build.variant=arduino:standard
+
+atmega328p-16.name=ATmega328p (external 16 MHz clock)
+atmega328p-16.bootloader.low_fuses=0xff
+atmega328p-16.bootloader.high_fuses=0xda
+atmega328p-16.bootloader.extended_fuses=0x05
+atmega328p-16.upload.maximum_size=32768
+atmega328p-16.build.mcu=atmega328p
+atmega328p-16.build.f_cpu=16000000L
+atmega328p-16.build.core=arduino:arduino
+atmega328p-16.build.variant=arduino:standard
