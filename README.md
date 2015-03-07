@@ -8,9 +8,7 @@ Skipping the Arduino bootloader means sketches start immediately after power-on,
 Install
 =======
 
-Create an "hardware" folder inside your Arduino sketch folder if it doesn't already exist. Then place the contents of this repository in a sub-folder called "atmega". You should end up with an "hardware/atmega/avr" folder containing the actual configuration files. Restart the Arduino IDE and the new board options should appear in the "Tools > Board" menu.
-
-If you've downloaded a release from the "releases" section on GitHub, just uncompress it into the "hardware" folder. That will create the appropriate folder structure.
+Create an `hardware` folder inside your Arduino sketch folder if it doesn't already exist. Then place the contents of this repository in a sub-folder called `atmega`. You should end up with an `hardware/atmega/avr` folder containing the actual configuration files. Restart the Arduino IDE and the new board options should appear in the "Tools > Board" menu.
 
 Programming
 ===========
@@ -23,7 +21,7 @@ To set the ATmega configuration fuses, use the "Tools > Burn Bootloader" menu it
 
 To load programs into the microcontroller, use the "Upload" button as usual. The IDE will upload the code using the selected ISP programmer.
 
-IDE Versions
-============
+Arduino IDE Versions
+====================
 
 These files are meant for Arduino IDE 1.6 or later. Get the "ide-1.0.x" release from the "releases" section on GitHub if you're using Arduino 1.0.
