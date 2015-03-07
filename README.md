@@ -24,4 +24,9 @@ To load programs into the microcontroller, use the "Upload" button as usual. The
 Arduino IDE Versions
 ====================
 
-These files are meant for Arduino IDE 1.6 or later. Get the "ide-1.0.x" release from the "releases" section on GitHub if you're using Arduino 1.0.
+These configuration files are meant for Arduino IDE 1.6 or later. If you're using Arduino 1.0 you'll need to get the "ide-1.0.x" release from the "releases" section on GitHub instead.
+
+Tips
+====
+
+If you're using an ATmega that already has the Arduino bootloader inside or has otherwise been configured to require an external clock source, you may get an `avrdude: Yikes!  Invalid device signature.` error. In this case, connect an appropriate external clock source to it (most likely 16 MHz) and try again. Once the ATmega has been configured to use its internal clock source, you can remove the external one and the error won't happen again.
