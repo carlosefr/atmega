@@ -8,25 +8,27 @@ Skipping the Arduino bootloader means sketches start immediately after power-on,
 Install
 =======
 
-Create an `hardware` folder inside your Arduino sketch folder if it doesn't already exist. Then place the contents of this repository in a sub-folder called `atmega`. You should end up with an `hardware/atmega/avr` folder containing the actual configuration files. Restart the Arduino IDE and the new board options should appear in the "Tools > Board" menu.
+Create an `hardware` folder inside your Arduino sketch folder if it doesn't already exist. Then place the contents of this repository in a sub-folder called `atmega`. You should end up with an `hardware/atmega/avr` folder containing the actual configuration files. Restart the Arduino IDE and the new board options should appear in the `Tools > Board` menu.
+
+![Arduino IDE](http://cloud.carlos-rodrigues.com/projects/atmega/screenshot-01.png)
 
 Programming
 ===========
 
 To program the microcontroller you will need an ISP programmer. An [Arduino as ISP](http://arduino.cc/en/Tutorial/ArduinoISP) works just fine.
 
-Choose your ISP programmer in the "Tools > Programmer" menu. Then choose your ATmega microcontroller from "Tools > Board" (eg. "ATmega168") and your choice of clock frequency from "Tools -> Clock" (eg. "1 MHz (internal)").
+Choose your ISP programmer in the `Tools > Programmer` menu. Then choose your ATmega microcontroller from `Tools > Board` and your choice of clock source and clock frequency from `Tools > Clock`.
 
-To set the ATmega configuration fuses, use the "Tools > Burn Bootloader" menu item. This doesn't actually burn a bootloader onto the chip, it only sets the fuses for the chosen clock frequency.
+To set the ATmega configuration fuses, use the `Tools > Burn Bootloader` menu item. This doesn't actually burn an Arduino bootloader onto the chip, it only sets the fuses for the chosen clock settings.
 
-To load programs into the microcontroller, use the "Upload" button as usual. The IDE will upload the code using the selected ISP programmer.
+To load programs into the microcontroller, use the `Upload` button as usual. The IDE will upload the code using the selected ISP programmer.
 
 Arduino IDE Versions
 ====================
 
-These configuration files are meant for Arduino IDE 1.6 or later. If you're using Arduino 1.0 you'll need to get the "ide-1.0.x" release from the "releases" section on GitHub instead.
+These configuration files are meant for Arduino IDE 1.6 or later. If you're still using version 1.0 of the IDE, you'll need to get the [ide-1.0.x](https://github.com/carlosefr/atmega/releases/tag/ide-1.0.x) release instead.
 
 Tips
 ====
 
-If you're using an ATmega that already has the Arduino bootloader inside or has otherwise been configured to require an external clock source, you may get an `avrdude: Yikes!  Invalid device signature.` error. In this case, connect an appropriate external clock source to it (most likely 16 MHz) and try again. Once the ATmega has been configured to use its internal clock source, you can remove the external one and the error won't happen again.
+If you're using an ATmega chip that already has the Arduino bootloader inside or has otherwise been configured to require an external clock source, you may get an `avrdude: Yikes! Invalid device signature.` error. In this case, connect an appropriate external clock source to it (most likely 16 MHz) and try again. Once the ATmega has been configured to use its internal clock source, you can remove the external one and the error shouldn't happen again.
