@@ -23,6 +23,14 @@ To set the ATmega configuration fuses, use the `Tools > Burn Bootloader` menu it
 
 To load programs into the microcontroller, use the `Upload` button as usual. The IDE will upload the code using the selected ISP programmer.
 
+Pin Mapping
+===========
+
+The ATmega168 and ATmega328p have identical pin configurations. Check [this diagram](http://arduino.cc/en/Hacking/PinMapping168) for their correspondence to Arduino pin numbering:
+
+![ATmega168/328p](http://arduino.cc/en/uploads/Hacking/Atmega168PinMap2.png)
+
+
 Arduino IDE Versions
 ====================
 
