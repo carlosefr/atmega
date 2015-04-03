@@ -15,7 +15,9 @@ Create an `hardware` folder inside your Arduino sketch folder if it doesn't alre
 Programming
 ===========
 
-To program the microcontroller you will need an ISP programmer. An [Arduino as ISP](http://arduino.cc/en/Tutorial/ArduinoISP) works just fine.
+To program the microcontroller you will need an ISP programmer. An [Arduino as ISP](http://arduino.cc/en/Tutorial/ArduinoISP) works just fine:
+
+![Arduino as ISP](http://arduino.cc/en/uploads/Tutorial/SimpleBreadboardAVR.png)
 
 Choose your ISP programmer in the `Tools > Programmer` menu. Then choose your ATmega microcontroller from `Tools > Board` and your choice of clock source and clock frequency from `Tools > Clock`.
 
