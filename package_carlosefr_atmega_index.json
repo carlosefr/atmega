@@ -1,0 +1,44 @@
+{
+  "packages": [
+    {
+      "name": "atmega",
+      "maintainer": "Carlos Rodrigues",
+      "websiteURL": "https://github.com/carlosefr/atmega",
+      "email": "",
+      "help": {
+        "online": ""
+      },
+      "platforms": [
+        {
+          "name": "Barebones ATmega Chips (no bootloader)",
+          "architecture": "avr",
+          "version": "1.1.0",
+          "category": "atmega",
+          "help": {
+            "online": ""
+          },
+          "url": "https://github.com/carlosefr/atmega/releases/download/ide-1.6.x-R1.1/atmega-ide-1.6.x-R1.1-boards-manager.zip",
+          "archiveFileName": "atmega-ide-1.6.x-R1.1-boards-manager.zip",
+          "checksum": "SHA-256:b868edd2042222dca8832e3ac8b8c53e3e20a8fd331db8c1c27da165c862585a",
+          "size": "1233",
+          "boards": [
+            {"name": "ATmega168"},
+            {"name": "ATmega328p"}
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "4.8.1-arduino5"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.0.1-arduino5"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
