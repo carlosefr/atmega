@@ -42,3 +42,5 @@ Tips
 ====
 
 If you're using an ATmega chip that already has the Arduino bootloader inside or has otherwise been configured to require an external clock source, you may get an `avrdude: Yikes! Invalid device signature.` error. In this case, connect an appropriate external clock source to it (most likely 16 MHz) and try again. Once the ATmega has been configured to use its internal clock source, you can remove the external one and the error shouldn't happen again.
+
+The core `delay()` function is not very precise for clock rates other than external 8 and 16MHz. The internal clock is not so bad but external 12 and 20MHz drift very noticeably. If this is a problem for you code, beware.

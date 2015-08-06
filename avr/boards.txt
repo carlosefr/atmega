@@ -36,11 +36,29 @@ atmega168.menu.clock.internal8.bootloader.high_fuses=0xdd
 atmega168.menu.clock.internal8.bootloader.extended_fuses=0x00
 atmega168.menu.clock.internal8.build.f_cpu=8000000L
 
-atmega168.menu.clock.internal16=16 MHz (external)
-atmega168.menu.clock.internal16.bootloader.low_fuses=0xff
-atmega168.menu.clock.internal16.bootloader.high_fuses=0xdd
-atmega168.menu.clock.internal16.bootloader.extended_fuses=0x00
-atmega168.menu.clock.internal16.build.f_cpu=16000000L
+atmega168.menu.clock.external8=8 MHz (external)
+atmega168.menu.clock.external8.bootloader.low_fuses=0xff
+atmega168.menu.clock.external8.bootloader.high_fuses=0xdd
+atmega168.menu.clock.external8.bootloader.extended_fuses=0x00
+atmega168.menu.clock.external8.build.f_cpu=8000000L
+
+atmega168.menu.clock.external12=12 MHz (external)
+atmega168.menu.clock.external12.bootloader.low_fuses=0xff
+atmega168.menu.clock.external12.bootloader.high_fuses=0xdd
+atmega168.menu.clock.external12.bootloader.extended_fuses=0x00
+atmega168.menu.clock.external12.build.f_cpu=12000000L
+
+atmega168.menu.clock.external16=16 MHz (external)
+atmega168.menu.clock.external16.bootloader.low_fuses=0xff
+atmega168.menu.clock.external16.bootloader.high_fuses=0xdd
+atmega168.menu.clock.external16.bootloader.extended_fuses=0x00
+atmega168.menu.clock.external16.build.f_cpu=16000000L
+
+atmega168.menu.clock.external20=20 MHz (external)
+atmega168.menu.clock.external20.bootloader.low_fuses=0xff
+atmega168.menu.clock.external20.bootloader.high_fuses=0xdd
+atmega168.menu.clock.external20.bootloader.extended_fuses=0x00
+atmega168.menu.clock.external20.build.f_cpu=20000000L
 
 atmega328p.menu.clock.internal1=1 MHz (internal)
 atmega328p.menu.clock.internal1.bootloader.low_fuses=0x62
@@ -54,8 +72,26 @@ atmega328p.menu.clock.internal8.bootloader.high_fuses=0xda
 atmega328p.menu.clock.internal8.bootloader.extended_fuses=0x05
 atmega328p.menu.clock.internal8.build.f_cpu=8000000L
 
-atmega328p.menu.clock.internal16=16 MHz (external)
-atmega328p.menu.clock.internal16.bootloader.low_fuses=0xff
-atmega328p.menu.clock.internal16.bootloader.high_fuses=0xda
-atmega328p.menu.clock.internal16.bootloader.extended_fuses=0x05
-atmega328p.menu.clock.internal16.build.f_cpu=16000000L
+atmega328p.menu.clock.external8=8 MHz (external)
+atmega328p.menu.clock.external8.bootloader.low_fuses=0xff
+atmega328p.menu.clock.external8.bootloader.high_fuses=0xda
+atmega328p.menu.clock.external8.bootloader.extended_fuses=0x05
+atmega328p.menu.clock.external8.build.f_cpu=8000000L
+
+atmega328p.menu.clock.external12=12 MHz (external)
+atmega328p.menu.clock.external12.bootloader.low_fuses=0xff
+atmega328p.menu.clock.external12.bootloader.high_fuses=0xda
+atmega328p.menu.clock.external12.bootloader.extended_fuses=0x05
+atmega328p.menu.clock.external12.build.f_cpu=12000000L
+
+atmega328p.menu.clock.external16=16 MHz (external)
+atmega328p.menu.clock.external16.bootloader.low_fuses=0xff
+atmega328p.menu.clock.external16.bootloader.high_fuses=0xda
+atmega328p.menu.clock.external16.bootloader.extended_fuses=0x05
+atmega328p.menu.clock.external16.build.f_cpu=16000000L
+
+atmega328p.menu.clock.external20=20 MHz (external)
+atmega328p.menu.clock.external20.bootloader.low_fuses=0xff
+atmega328p.menu.clock.external20.bootloader.high_fuses=0xda
+atmega328p.menu.clock.external20.bootloader.extended_fuses=0x05
+atmega328p.menu.clock.external20.build.f_cpu=20000000L
