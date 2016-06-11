@@ -37,6 +37,38 @@
               "version": "6.0.1-arduino5"
             }
           ]
+        },
+        {
+          "name": "Barebones ATmega Chips (no bootloader)",
+          "architecture": "avr",
+          "version": "1.2.0",
+          "§tegory": "atmega",
+          "help": {
+            "online": ""
+          },
+          "url": "https://github.com/stackmagic/atmega/releases/download/ide-1.6.x-R1.2/atmega-ide-1.6.x-R1.2-boards-manager.zip",
+          "archiveFileName": "atmega-ide-1.6.x-R1.2-boards-manager.zip",
+          "checksum": "SHA-256:140490dd7bb5ef2a7227d6f0a5abdfdfacb6b461a393f9278c84c324e0f8fa39",
+          "size": "1702",
+          "boards": [
+            {"name": "ATmega8"},
+            {"name": "ATmega168"},
+            {"name": "ATmega168p"},
+            {"name": "ATmega328"},
+            {"name": "ATmega328p"}
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "4.8.1-arduino5"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.0.1-arduino5"
+            }
+          ]
         }
       ],
       "tools": []
