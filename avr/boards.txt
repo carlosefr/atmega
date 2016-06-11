@@ -1,9 +1,14 @@
+
 menu.clock=Clock
 
+## ATmega168
+
 atmega168.name=ATmega168
+
 atmega168.bootloader.tool=arduino:avrdude
 atmega168.bootloader.unlock_bits=0x3f
 atmega168.bootloader.lock_bits=0x0f
+
 atmega168.build.board=atmega168
 atmega168.upload.tool=arduino:avrdude
 atmega168.upload.maximum_size=16384
@@ -11,18 +16,6 @@ atmega168.upload.maximum_data_size=1024
 atmega168.build.mcu=atmega168
 atmega168.build.variant=arduino:standard
 atmega168.build.core=arduino:arduino
-
-atmega328p.name=ATmega328p
-atmega328p.bootloader.tool=arduino:avrdude
-atmega328p.bootloader.unlock_bits=0x3f
-atmega328p.bootloader.lock_bits=0x0f
-atmega328p.build.board=atmega328p
-atmega328p.upload.tool=arduino:avrdude
-atmega328p.upload.maximum_size=32768
-atmega328p.upload.maximum_data_size=2048
-atmega328p.build.mcu=atmega328p
-atmega328p.build.variant=arduino:standard
-atmega328p.build.core=arduino:arduino
 
 atmega168.menu.clock.internal1=1 MHz (internal)
 atmega168.menu.clock.internal1.bootloader.low_fuses=0x62
@@ -60,6 +53,126 @@ atmega168.menu.clock.external20.bootloader.high_fuses=0xdd
 atmega168.menu.clock.external20.bootloader.extended_fuses=0x00
 atmega168.menu.clock.external20.build.f_cpu=20000000L
 
+## ATmega168
+
+atmega168p.name=ATmega168p
+
+atmega168p.bootloader.tool=arduino:avrdude
+atmega168p.bootloader.unlock_bits=0x3f
+atmega168p.bootloader.lock_bits=0x0f
+
+atmega168p.build.board=atmega168p
+atmega168p.upload.tool=arduino:avrdude
+atmega168p.upload.maximum_size=16384
+atmega168p.upload.maximum_data_size=1024
+atmega168p.build.mcu=atmega168p
+atmega168p.build.variant=arduino:standard
+atmega168p.build.core=arduino:arduino
+
+atmega168p.menu.clock.internal1=1 MHz (internal)
+atmega168p.menu.clock.internal1.bootloader.low_fuses=0x62
+atmega168p.menu.clock.internal1.bootloader.high_fuses=0xdd
+atmega168p.menu.clock.internal1.bootloader.extended_fuses=0x00
+atmega168p.menu.clock.internal1.build.f_cpu=1000000L
+
+atmega168p.menu.clock.internal8=8 MHz (internal)
+atmega168p.menu.clock.internal8.bootloader.low_fuses=0xe2
+atmega168p.menu.clock.internal8.bootloader.high_fuses=0xdd
+atmega168p.menu.clock.internal8.bootloader.extended_fuses=0x00
+atmega168p.menu.clock.internal8.build.f_cpu=8000000L
+
+atmega168p.menu.clock.external8=8 MHz (external)
+atmega168p.menu.clock.external8.bootloader.low_fuses=0xff
+atmega168p.menu.clock.external8.bootloader.high_fuses=0xdd
+atmega168p.menu.clock.external8.bootloader.extended_fuses=0x00
+atmega168p.menu.clock.external8.build.f_cpu=8000000L
+
+atmega168p.menu.clock.external12=12 MHz (external)
+atmega168p.menu.clock.external12.bootloader.low_fuses=0xff
+atmega168p.menu.clock.external12.bootloader.high_fuses=0xdd
+atmega168p.menu.clock.external12.bootloader.extended_fuses=0x00
+atmega168p.menu.clock.external12.build.f_cpu=12000000L
+
+atmega168p.menu.clock.external16=16 MHz (external)
+atmega168p.menu.clock.external16.bootloader.low_fuses=0xff
+atmega168p.menu.clock.external16.bootloader.high_fuses=0xdd
+atmega168p.menu.clock.external16.bootloader.extended_fuses=0x00
+atmega168p.menu.clock.external16.build.f_cpu=16000000L
+
+atmega168p.menu.clock.external20=20 MHz (external)
+atmega168p.menu.clock.external20.bootloader.low_fuses=0xff
+atmega168p.menu.clock.external20.bootloader.high_fuses=0xdd
+atmega168p.menu.clock.external20.bootloader.extended_fuses=0x00
+atmega168p.menu.clock.external20.build.f_cpu=20000000L
+
+# ATmega328
+
+atmega328.name=ATmega328
+
+atmega328.bootloader.tool=arduino:avrdude
+atmega328.bootloader.unlock_bits=0x3f
+atmega328.bootloader.lock_bits=0x0f
+
+atmega328.build.board=atmega328
+atmega328.upload.tool=arduino:avrdude
+atmega328.upload.maximum_size=32768
+atmega328.upload.maximum_data_size=2048
+atmega328.build.mcu=atmega328
+atmega328.build.variant=arduino:standard
+atmega328.build.core=arduino:arduino
+
+atmega328.menu.clock.internal1=1 MHz (internal)
+atmega328.menu.clock.internal1.bootloader.low_fuses=0x62
+atmega328.menu.clock.internal1.bootloader.high_fuses=0xda
+atmega328.menu.clock.internal1.bootloader.extended_fuses=0x05
+atmega328.menu.clock.internal1.build.f_cpu=1000000L
+
+atmega328.menu.clock.internal8=8 MHz (internal)
+atmega328.menu.clock.internal8.bootloader.low_fuses=0xe2
+atmega328.menu.clock.internal8.bootloader.high_fuses=0xda
+atmega328.menu.clock.internal8.bootloader.extended_fuses=0x05
+atmega328.menu.clock.internal8.build.f_cpu=8000000L
+
+atmega328.menu.clock.external8=8 MHz (external)
+atmega328.menu.clock.external8.bootloader.low_fuses=0xff
+atmega328.menu.clock.external8.bootloader.high_fuses=0xda
+atmega328.menu.clock.external8.bootloader.extended_fuses=0x05
+atmega328.menu.clock.external8.build.f_cpu=8000000L
+
+atmega328.menu.clock.external12=12 MHz (external)
+atmega328.menu.clock.external12.bootloader.low_fuses=0xff
+atmega328.menu.clock.external12.bootloader.high_fuses=0xda
+atmega328.menu.clock.external12.bootloader.extended_fuses=0x05
+atmega328.menu.clock.external12.build.f_cpu=12000000L
+
+atmega328.menu.clock.external16=16 MHz (external)
+atmega328.menu.clock.external16.bootloader.low_fuses=0xff
+atmega328.menu.clock.external16.bootloader.high_fuses=0xda
+atmega328.menu.clock.external16.bootloader.extended_fuses=0x05
+atmega328.menu.clock.external16.build.f_cpu=16000000L
+
+atmega328.menu.clock.external20=20 MHz (external)
+atmega328.menu.clock.external20.bootloader.low_fuses=0xff
+atmega328.menu.clock.external20.bootloader.high_fuses=0xda
+atmega328.menu.clock.external20.bootloader.extended_fuses=0x05
+atmega328.menu.clock.external20.build.f_cpu=20000000L
+
+# ATmega328p
+
+atmega328p.name=ATmega328p
+
+atmega328p.bootloader.tool=arduino:avrdude
+atmega328p.bootloader.unlock_bits=0x3f
+atmega328p.bootloader.lock_bits=0x0f
+
+atmega328p.build.board=atmega328p
+atmega328p.upload.tool=arduino:avrdude
+atmega328p.upload.maximum_size=32768
+atmega328p.upload.maximum_data_size=2048
+atmega328p.build.mcu=atmega328p
+atmega328p.build.variant=arduino:standard
+atmega328p.build.core=arduino:arduino
+
 atmega328p.menu.clock.internal1=1 MHz (internal)
 atmega328p.menu.clock.internal1.bootloader.low_fuses=0x62
 atmega328p.menu.clock.internal1.bootloader.high_fuses=0xda
@@ -95,6 +208,8 @@ atmega328p.menu.clock.external20.bootloader.low_fuses=0xff
 atmega328p.menu.clock.external20.bootloader.high_fuses=0xda
 atmega328p.menu.clock.external20.bootloader.extended_fuses=0x05
 atmega328p.menu.clock.external20.build.f_cpu=20000000L
+
+# ATmega8
 
 atmega8.name=ATmega8
 
