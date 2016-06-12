@@ -5,6 +5,8 @@ With these configuration files you can program ATmega 8/168/168p/328/328p microc
 
 Skipping the Arduino bootloader means sketches start immediately after power-on, without any delay, and you have a little extra flash memory available to your programs. Using the (optional) slower internal clock options means you can save on components, but also on power (since a slower chip draws less current).
 
+**Note:** I've used this personally with ATmega168 and ATmega328p chips. The ATmega328 has also been reported to work. The ATmega8 and ATmega168p should work too but I still need some direct confirmation. If you have one of these and see no issues, drop me a note.
+
 Install
 =======
 
