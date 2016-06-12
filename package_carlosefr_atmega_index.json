@@ -48,7 +48,7 @@
           },
           "url": "https://github.com/carlosefr/atmega/releases/download/ide-1.6.x-R1.2.1/atmega-ide-1.6.x-R1.2.1-boards-manager.zip",
           "archiveFileName": "atmega-ide-1.6.x-R1.2.1-boards-manager.zip",
-          "checksum": "c1a114d989482a1e2301da59e739a4682b45f3bcb26a3db847212b3fb9f8af8c",
+          "checksum": "SHA-256:c1a114d989482a1e2301da59e739a4682b45f3bcb26a3db847212b3fb9f8af8c",
           "size": "1684",
           "boards": [
             {"name": "ATmega168/168p"},
