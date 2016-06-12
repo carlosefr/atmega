@@ -8,11 +8,11 @@ Skipping the Arduino bootloader means sketches start immediately after power-on,
 Install
 =======
 
-Go to the **Preferences** window and add the folloing URL to the `Additional Boards Manager URLs` list:
+Go to the **Preferences** window and add the following URL to the `Additional Boards Manager URLs` list:
 
-  * `https://raw.githubusercontent.com/carlosefr/atmega/master/package_carlosefr_atmega_index.json`
+  * https://raw.githubusercontent.com/carlosefr/atmega/master/package_carlosefr_atmega_index.json
 
-The chip definitions are now available to be installed from the **Boards Manager**. Search for `Barebones ATmega Chips` in `Tools > Boards > Boards Manager`, select it and click `Install`.
+The chip definitions are now available to be installed from the **Boards Manager**. Search for `Barebones ATmega Chips` in `Tools > Board > Boards Manager`, select it and click `Install`.
 
 ![ATmega](https://raw.githubusercontent.com/carlosefr/atmega/master/atmega_addon.png)
 
