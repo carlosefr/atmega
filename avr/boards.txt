@@ -15,8 +15,10 @@ atmega168.bootloader.lock_bits=0x0f
 atmega168.upload.tool=arduino:avrdude
 atmega168.upload.maximum_size=16384
 atmega168.upload.maximum_data_size=1024
+atmega168.upload.speed=19200
 atmega168.build.variant=arduino:standard
 atmega168.build.core=arduino:arduino
+atmega168.build.board=atmega168
 
 atmega168.menu.clock.internal1=1 MHz (internal)
 atmega168.menu.clock.internal1.bootloader.low_fuses=0x62
@@ -80,8 +82,10 @@ atmega328.bootloader.lock_bits=0x0f
 atmega328.upload.tool=arduino:avrdude
 atmega328.upload.maximum_size=32768
 atmega328.upload.maximum_data_size=2048
+atmega328.upload.speed=19200
 atmega328.build.variant=arduino:standard
 atmega328.build.core=arduino:arduino
+atmega328.build.board=atmega328
 
 atmega328.menu.clock.internal1=1 MHz (internal)
 atmega328.menu.clock.internal1.bootloader.low_fuses=0x62
@@ -147,8 +151,10 @@ atmega8.upload.tool=arduino:avrdude
 atmega8.upload.maximum_size=8192
 atmega8.upload.maximum_data_size=1024
 atmega8.upload.protocol=stk500
+atmega8.upload.speed=19200
 atmega8.build.variant=arduino:standard
 atmega8.build.core=arduino:arduino
+atmega8.build.board=atmega8
 
 atmega8.menu.clock.internal1=1 MHz (internal)
 atmega8.menu.clock.internal1.bootloader.low_fuses=0xe1
