@@ -1,7 +1,10 @@
-
 menu.clock=Clock
 
-## ATmega168
+
+#
+# ATmega168
+# http://www.atmel.com/devices/ATMEGA168.aspx
+#
 
 atmega168.name=ATmega168
 
@@ -53,7 +56,11 @@ atmega168.menu.clock.external20.bootloader.high_fuses=0xdd
 atmega168.menu.clock.external20.bootloader.extended_fuses=0x00
 atmega168.menu.clock.external20.build.f_cpu=20000000L
 
-## ATmega168
+
+#
+# ATmega168p
+# http://www.atmel.com/devices/ATMEGA168P.aspx
+#
 
 atmega168p.name=ATmega168p
 
@@ -105,7 +112,11 @@ atmega168p.menu.clock.external20.bootloader.high_fuses=0xdd
 atmega168p.menu.clock.external20.bootloader.extended_fuses=0x00
 atmega168p.menu.clock.external20.build.f_cpu=20000000L
 
+
+#
 # ATmega328
+# http://www.atmel.com/devices/ATMEGA328.aspx
+#
 
 atmega328.name=ATmega328
 
@@ -157,7 +168,11 @@ atmega328.menu.clock.external20.bootloader.high_fuses=0xda
 atmega328.menu.clock.external20.bootloader.extended_fuses=0x05
 atmega328.menu.clock.external20.build.f_cpu=20000000L
 
+
+#
 # ATmega328p
+# http://www.atmel.com/devices/ATMEGA328P.aspx
+#
 
 atmega328p.name=ATmega328p
 
@@ -209,7 +224,11 @@ atmega328p.menu.clock.external20.bootloader.high_fuses=0xda
 atmega328p.menu.clock.external20.bootloader.extended_fuses=0x05
 atmega328p.menu.clock.external20.build.f_cpu=20000000L
 
+
+#
 # ATmega8
+# http://www.atmel.com/devices/ATMEGA8.aspx
+#
 
 atmega8.name=ATmega8
 
@@ -221,6 +240,7 @@ atmega8.build.core=arduino:arduino
 atmega8.build.board=atmega8
 atmega8.upload.tool=arduino:avrdude
 atmega8.upload.maximum_size=8192
+atmega8.upload.maximum_data_size=1024
 atmega8.upload.protocol=stk500
 atmega8.build.mcu=atmega8
 atmega8.build.variant=arduino:standard
