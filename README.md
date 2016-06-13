@@ -1,28 +1,30 @@
 About
 =====
 
-With these configuration files you can program ATmega 8/168/168p/328/328p microcontrollers from the [Arduino IDE](http://arduino.cc), without using the Arduino bootloader. It supports chips using external or internal clocks.
+With these configuration files you can program bare ATmega microcontrollers from the [Arduino IDE](http://arduino.cc), without using the Arduino bootloader. It supports chips using external or internal clocks.
 
 Skipping the Arduino bootloader means sketches start immediately after power-on, without any delay, and you have a little extra flash memory available to your programs. Using the (optional) slower internal clock options means you can save on components, but also on power (since a slower chip draws less current).
 
-Supported Chips
-===============
+Supported Chips and Clocks
+==========================
 
   * **ATmega168** and **ATmega328p**: I've personally used these. Support is **OK**.
   * **ATmega328**: Same configuration fuses as the ATmega328p. Reported to work. Support is **OK**.
   * **ATmega168p**: Same configuration fuses as the ATmega168. Needs confirmation. Support is **experimental**.
   * **ATmega8**: Imported from another fork. Needs help with testing. Support is **experimental**.
 
-If you have an ATmega168p and this works for you, feel free to drop me a note. If you have an ATmega8 and can spare some minutes testing configuration fuses, check out issue #5. Your help would be appreciated.
+If you have an ATmega168p and this works for you, feel free to drop me a note. If you have an ATmega8 and can spare some minutes testing configuration fuses, check out [issue #5](https://github.com/carlosefr/atmega/issues/5). Your help would be appreciated.
+
+The core `delay()` function is not very precise for clock rates other than external 8 and 16MHz. The internal clock should be fine for most cases but external 12 and 20 MHz drift very noticeably. If your code depends on precision timing, beware.
 
 Install
 =======
 
-Go to the **Preferences** window and add the following URL to the `Additional Boards Manager URLs` list:
+Open the Arduino IDE preferences window and add the following URL to the `Additional Boards Manager URLs` list:
 
   * https://raw.githubusercontent.com/carlosefr/atmega/master/package_carlosefr_atmega_index.json
 
-The chip definitions are now available to be installed from the **Boards Manager**. Search for `Barebones ATmega Chips` in `Tools > Board > Boards Manager`, select it and click `Install`.
+Now go to `Tools > Board > Boards Manager` and search for `Barebones ATmega Chips`. Select it from the list and click `Install`. A new section called `ATmega Microcontrollers` will immediately appear in the `Tools > Board` menu.
 
 ![ATmega](https://raw.githubusercontent.com/carlosefr/atmega/master/atmega_addon.png)
 
@@ -57,5 +59,3 @@ Tips and Caveats
 ================
 
 If you're using an ATmega chip that already has the Arduino bootloader inside or has otherwise been configured to require an external clock source, you may get an `avrdude: Yikes! Invalid device signature.` error. In this case, connect an appropriate external clock source to it (most likely 16 MHz) and try again. Once the ATmega has been configured to use its internal clock source, you can remove the external one and the error shouldn't happen again.
-
-The core `delay()` function is not very precise for clock rates other than external 8 and 16MHz. The internal clock is not so bad but external 12 and 20MHz drift very noticeably. If this is a problem for you code, beware.
