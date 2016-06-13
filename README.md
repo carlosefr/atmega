@@ -5,7 +5,15 @@ With these configuration files you can program ATmega 8/168/168p/328/328p microc
 
 Skipping the Arduino bootloader means sketches start immediately after power-on, without any delay, and you have a little extra flash memory available to your programs. Using the (optional) slower internal clock options means you can save on components, but also on power (since a slower chip draws less current).
 
-**Note:** I've used this personally with ATmega168 and ATmega328p chips. The ATmega328 has also been reported to work. The ATmega8 and ATmega168p should work too but I still need some direct confirmation. If you have one of these and see no issues, drop me a note.
+Supported Chips
+===============
+
+  * **ATmega168** and **ATmega328p**: I've personally used these. Support is **OK**.
+  * **ATmega328**: Same configuration fuses as the ATmega328p. Reported to work. Support is **OK**.
+  * **ATmega168p**: Same configuration fuses as the ATmega168. Needs confirmation. Support is **experimental**.
+  * **ATmega8**: Imported from another fork. Needs help with testing. Support is **experimental**.
+
+If you have an ATmega168p and this works for you, feel free to drop me a note. If you have an ATmega8 and can spare some minutes testing configuration fuses, check out issue #5. Your help would be appreciated.
 
 Install
 =======
@@ -51,5 +59,3 @@ Tips and Caveats
 If you're using an ATmega chip that already has the Arduino bootloader inside or has otherwise been configured to require an external clock source, you may get an `avrdude: Yikes! Invalid device signature.` error. In this case, connect an appropriate external clock source to it (most likely 16 MHz) and try again. Once the ATmega has been configured to use its internal clock source, you can remove the external one and the error shouldn't happen again.
 
 The core `delay()` function is not very precise for clock rates other than external 8 and 16MHz. The internal clock is not so bad but external 12 and 20MHz drift very noticeably. If this is a problem for you code, beware.
-
-The ATmega168p and ATmega328 chip variants supported by this addon were never used in Arduino boards, if you're wondering.
