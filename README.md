@@ -8,14 +8,11 @@ Skipping the Arduino bootloader means sketches start immediately after power-on,
 Supported Chips and Clocks
 ==========================
 
-  * **ATmega168** and **ATmega328p**: I've personally used these. Support is **OK**.
-  * **ATmega328**: Same configuration fuses as the ATmega328p. Reported to work. Support is **OK**.
-  * **ATmega168p**: Same configuration fuses as the ATmega168. Needs confirmation. Support is **experimental**.
-  * **ATmega8**: Imported from another fork. Needs help with testing. Support is **experimental**.
+  * **ATmega8/168**: The chips used in early arduino boards (e.g. Arduino NG, Arduino Diecimila).
+  * **ATmega328p**: The chips used in recent arduino boards (eg. Arduino Duemilanove, Arduino UNO).
+  * **ATmega168p/328**: Different but functionally equivalent to the above. People sometimes buy these by mistake.
 
-If you have an ATmega168p and this works for you, feel free to drop me a note. If you have an ATmega8 and can spare some minutes testing configuration fuses, check out [issue #5](https://github.com/carlosefr/atmega/issues/5). Your help would be appreciated.
-
-The core `delay()` function is not very precise for clock rates other than external 8 and 16MHz. The internal clock should be fine for most cases but external 12 and 20 MHz drift very noticeably. If your code depends on precision timing, beware.
+The core `delay()` function is not very precise for clock rates other than external 8 and 16MHz. The internal clock should provide enough precision for most cases but external 12 and 20 MHz are useful only if your code **does not** depend on precision timing.
 
 Install
 =======
@@ -28,10 +25,12 @@ Now go to `Tools > Board > Boards Manager` and search for `Barebones ATmega Chip
 
 ![ATmega](https://raw.githubusercontent.com/carlosefr/atmega/master/atmega_addon.png)
 
+Alternatively you can create an `<Arduino Sketckbook Folder>/hardware` directory and `git clone` this repository inside it. The Arduino IDE must be restarted for this to take effect.
+
 Programming
 ===========
 
-To program the microcontroller you will need an ISP programmer. An [Arduino as ISP](http://arduino.cc/en/Tutorial/ArduinoISP) works just fine:
+To program the microcontroller you will need an ISP programmer. An [Arduino as ISP](http://arduino.cc/en/Tutorial/ArduinoISP) works just fine (don't forget to put a 10uF capacitor between the Arduino's RESET pin and GND if your're using an Arduino UNO):
 
 ![Arduino as ISP](http://arduino.cc/en/uploads/Tutorial/SimpleBreadboardAVR.png)
 
@@ -53,9 +52,11 @@ The pin layout for the ATmega8 is also identical to these, but additional functi
 Arduino IDE Versions
 ====================
 
-These configuration files are meant for Arduino IDE 1.6 or later. If you're still using version 1.0 of the IDE, you'll need to get the [ide-1.0.x](https://github.com/carlosefr/atmega/releases/tag/ide-1.0.x) release instead (only the ATmega168 and 328p are supported).
+These configuration files are meant for Arduino IDE 1.6 or later. If you're still using version 1.0 of the IDE, you'll need to get the [ide-1.0.x](https://github.com/carlosefr/atmega/releases/tag/ide-1.0.x) release instead (only the ATmega168/328p are supported).
 
 Tips and Caveats
 ================
 
 If you're using an ATmega chip that already has the Arduino bootloader inside or has otherwise been configured to require an external clock source, you may get an `avrdude: Yikes! Invalid device signature.` error. In this case, connect an appropriate external clock source to it (most likely 16 MHz) and try again. Once the ATmega has been configured to use its internal clock source, you can remove the external one and the error shouldn't happen again.
+
+You may also get this error if you're using an Arduino UNO as an ISP programmer and you forget to put a 10uF capacitor between its RESET and GND pins to prevent it from resetting on upload.
