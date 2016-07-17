@@ -142,18 +142,17 @@ atmega328.menu.cpu.atmega328p.build.mcu=atmega328p
 
 atmega8.name=ATmega8
 
-atmega8.bootloader.tool=arduino:avrdude
+atmega8.bootloader.tool=avrdude-noefuse
 atmega8.bootloader.unlock_bits=0x3f
 atmega8.bootloader.lock_bits=0x0f
 
-atmega8.build.core=arduino:arduino
 atmega8.upload.tool=arduino:avrdude
 atmega8.upload.maximum_size=8192
 atmega8.upload.maximum_data_size=1024
-atmega8.upload.protocol=stk500
 atmega8.upload.speed=19200
-atmega8.build.variant=arduino:standard
+
 atmega8.build.core=arduino:arduino
+atmega8.build.variant=arduino:standard
 atmega8.build.board=atmega8
 
 atmega8.menu.clock.internal1=1 MHz (internal)
