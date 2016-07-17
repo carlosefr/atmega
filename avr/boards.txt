@@ -156,18 +156,28 @@ atmega8.build.variant=arduino:standard
 atmega8.build.board=atmega8
 
 atmega8.menu.clock.internal1=1 MHz (internal)
-atmega8.menu.clock.internal1.bootloader.low_fuses=0xe1
-atmega8.menu.clock.internal1.bootloader.high_fuses=0xc4
+atmega8.menu.clock.internal1.bootloader.low_fuses=0xa1
+atmega8.menu.clock.internal1.bootloader.high_fuses=0xcd
 atmega8.menu.clock.internal1.build.f_cpu=1000000L
 
 atmega8.menu.clock.internal8=8 MHz (internal)
-atmega8.menu.clock.internal8.bootloader.low_fuses=0xe4
-atmega8.menu.clock.internal8.bootloader.high_fuses=0xc4
+atmega8.menu.clock.internal8.bootloader.low_fuses=0xa4
+atmega8.menu.clock.internal8.bootloader.high_fuses=0xcd
 atmega8.menu.clock.internal8.build.f_cpu=8000000L
 
+atmega8.menu.clock.external8=8 MHz (external)
+atmega8.menu.clock.external8.bootloader.low_fuses=0xbf
+atmega8.menu.clock.external8.bootloader.high_fuses=0xcd
+atmega8.menu.clock.external8.build.f_cpu=8000000L
+
+atmega8.menu.clock.external12=12 MHz (external)
+atmega8.menu.clock.external12.bootloader.low_fuses=0xbf
+atmega8.menu.clock.external12.bootloader.high_fuses=0xcd
+atmega8.menu.clock.external12.build.f_cpu=12000000L
+
 atmega8.menu.clock.external16=16 MHz (external)
-atmega8.menu.clock.external16.bootloader.low_fuses=0xff
-atmega8.menu.clock.external16.bootloader.high_fuses=0xc4
+atmega8.menu.clock.external16.bootloader.low_fuses=0xbf
+atmega8.menu.clock.external16.bootloader.high_fuses=0xcd
 atmega8.menu.clock.external16.build.f_cpu=16000000L
 
 # Signature: ATmega8
