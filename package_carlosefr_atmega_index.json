@@ -84,18 +84,6 @@
             {"name": "ATmega168/168p"},
             {"name": "ATmega328/328p"},
             {"name": "ATmega8"}
-          ],
-          "toolsDependencies": [
-            {
-              "packager": "arduino",
-              "name": "avr-gcc",
-              "version": "4.8.1-arduino5"
-            },
-            {
-              "packager": "arduino",
-              "name": "avrdude",
-              "version": "6.0.1-arduino5"
-            }
           ]
         }
       ],
