@@ -23,37 +23,37 @@ atmega168.build.board=atmega168
 atmega168.menu.clock.internal1=Internal 1 MHz
 atmega168.menu.clock.internal1.bootloader.low_fuses=0x62
 atmega168.menu.clock.internal1.bootloader.high_fuses=0xdd
-atmega168.menu.clock.internal1.bootloader.extended_fuses=0x01
+atmega168.menu.clock.internal1.bootloader.extended_fuses=0xf9
 atmega168.menu.clock.internal1.build.f_cpu=1000000L
 
 atmega168.menu.clock.internal8=Internal 8 MHz
 atmega168.menu.clock.internal8.bootloader.low_fuses=0xe2
 atmega168.menu.clock.internal8.bootloader.high_fuses=0xdd
-atmega168.menu.clock.internal8.bootloader.extended_fuses=0x01
+atmega168.menu.clock.internal8.bootloader.extended_fuses=0xf9
 atmega168.menu.clock.internal8.build.f_cpu=8000000L
 
 atmega168.menu.clock.external8=External 8 MHz
 atmega168.menu.clock.external8.bootloader.low_fuses=0xff
 atmega168.menu.clock.external8.bootloader.high_fuses=0xdd
-atmega168.menu.clock.external8.bootloader.extended_fuses=0x01
+atmega168.menu.clock.external8.bootloader.extended_fuses=0xf9
 atmega168.menu.clock.external8.build.f_cpu=8000000L
 
 atmega168.menu.clock.external12=External 12 MHz
 atmega168.menu.clock.external12.bootloader.low_fuses=0xff
 atmega168.menu.clock.external12.bootloader.high_fuses=0xdd
-atmega168.menu.clock.external12.bootloader.extended_fuses=0x01
+atmega168.menu.clock.external12.bootloader.extended_fuses=0xf9
 atmega168.menu.clock.external12.build.f_cpu=12000000L
 
 atmega168.menu.clock.external16=External 16 MHz
 atmega168.menu.clock.external16.bootloader.low_fuses=0xff
 atmega168.menu.clock.external16.bootloader.high_fuses=0xdd
-atmega168.menu.clock.external16.bootloader.extended_fuses=0x01
+atmega168.menu.clock.external16.bootloader.extended_fuses=0xf9
 atmega168.menu.clock.external16.build.f_cpu=16000000L
 
 atmega168.menu.clock.external20=External 20 MHz
 atmega168.menu.clock.external20.bootloader.low_fuses=0xff
 atmega168.menu.clock.external20.bootloader.high_fuses=0xdd
-atmega168.menu.clock.external20.bootloader.extended_fuses=0x00
+atmega168.menu.clock.external20.bootloader.extended_fuses=0xf9
 atmega168.menu.clock.external20.build.f_cpu=20000000L
 
 # Signature: ATmega168
