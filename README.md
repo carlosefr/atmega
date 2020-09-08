@@ -38,7 +38,7 @@ Choose your ISP programmer in the `Tools > Programmer` menu. Then choose your AT
 
 To set the ATmega configuration fuses, use the `Tools > Burn Bootloader` menu item. This doesn't actually burn an Arduino bootloader onto the chip, it only sets the chip configuration for the chosen clock settings.
 
-**Note:** If you're seeing weird behavior, like things not running at the speed you're expecting, check if you're updated the chip configuration properly. **It isn't updated automatically** when you upload a sketch to it.
+**Note:** If you're seeing weird behavior, like things not running at the speed you're expecting, check if you're updated the chip configuration with "Burn Bootloader". The configuration **isn't updated automatically** when you upload a sketch to the chip.
 
 To load programs into the microcontroller, use the `Upload` button as usual. You can also use the `Sketch > Upload with Programmer` menu entry. Both will make the IDE upload the code using the selected ISP programmer.
 
