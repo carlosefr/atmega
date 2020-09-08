@@ -38,6 +38,8 @@ Choose your ISP programmer in the `Tools > Programmer` menu. Then choose your AT
 
 To set the ATmega configuration fuses, use the `Tools > Burn Bootloader` menu item. This doesn't actually burn an Arduino bootloader onto the chip, it only sets the chip configuration for the chosen clock settings.
 
+**Note:** If you're seeing weird behavior, like things not running at the speed you're expecting, check if you're updated the chip configuration properly. **It isn't updated automatically** when you upload a sketch to it.
+
 To load programs into the microcontroller, use the `Upload` button as usual. You can also use the `Sketch > Upload with Programmer` menu entry. Both will make the IDE upload the code using the selected ISP programmer.
 
 Pin Mapping
@@ -48,11 +50,6 @@ The ATmega168/328 families have identical pin configurations. Check [this diagra
 ![ATmega168/168p/328/328p](https://raw.githubusercontent.com/carlosefr/atmega/master/atmega328p.png)
 
 The pin layout for the ATmega8 is also identical to these, but additional functions may be missing (eg. PWM on the left-side pins).
-
-Arduino IDE Versions
-====================
-
-These configuration files are meant for Arduino IDE 1.6 or later. If you're still using version 1.0 of the IDE, you'll need to get the [ide-1.0.x](https://github.com/carlosefr/atmega/releases/tag/ide-1.0.x) release instead (only the ATmega168/328p are supported).
 
 Tips and Caveats
 ================
